@@ -25,6 +25,7 @@ pipeline {
     }
     stage('Test') {
       steps {
+		sh "cat docker-compose.build.yml"
         //sh "docker -H ssh://${BUILD_HOST} container exec dockerkvs_apptest pytest -v test_app.py"
         //sh "docker -H ssh://${BUILD_HOST} container exec dockerkvs_webtest pytest -v test_static.py"
         //sh "docker -H ssh://${BUILD_HOST} container exec dockerkvs_webtest pytest -v test_selenium.py"
