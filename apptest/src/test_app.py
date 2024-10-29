@@ -28,9 +28,6 @@ APP_HOST = os.environ['APP_HOST']
 APP_PORT = int(os.environ['APP_PORT'])
 BASEURL = f'http://{APP_HOST}:{APP_PORT}/api/v1'
 
-def test_key_eq():
-    pass
-"""
 ##########
 ## KEYS ##
 ##########
@@ -204,4 +201,3 @@ def clean_and_add_keys():
   assert r.status_code == 200
   r = put(f'{BASEURL}/keys/banana', data='yellow')
   assert r.status_code == 200
-"""
