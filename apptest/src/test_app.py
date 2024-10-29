@@ -28,7 +28,7 @@ APP_HOST = os.environ['APP_HOST']
 APP_PORT = int(os.environ['APP_PORT'])
 BASEURL = f'http://{APP_HOST}:{APP_PORT}/api/v1'
 
-def test_key_eq:
+def test_key_eq():
     assert　True
 """
 ##########
