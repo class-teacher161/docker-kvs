@@ -20,7 +20,7 @@
 # 500: Server internal error.
 #  - Unexpected trouble happens on app server due to Bug.
 #
-"""
+
 import os
 from requests import get, post, put, delete
 
@@ -28,6 +28,9 @@ APP_HOST = os.environ['APP_HOST']
 APP_PORT = int(os.environ['APP_PORT'])
 BASEURL = f'http://{APP_HOST}:{APP_PORT}/api/v1'
 
+def test_key_eq:
+    assert　True
+"""
 ##########
 ## KEYS ##
 ##########
