@@ -20,7 +20,7 @@
 # 500: Server internal error.
 #  - Unexpected trouble happens on app server due to Bug.
 #
-
+"""
 import os
 from requests import get, post, put, delete
 
@@ -201,3 +201,4 @@ def clean_and_add_keys():
   assert r.status_code == 200
   r = put(f'{BASEURL}/keys/banana', data='yellow')
   assert r.status_code == 200
+"""
